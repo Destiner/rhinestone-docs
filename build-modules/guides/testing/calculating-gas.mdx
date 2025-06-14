@@ -59,6 +59,6 @@ Note that if you re-run gas calculations, then the newest number will be added a
 All numbers are in gas units. To calculate the cost in gwei, follow the instructions below:
 
 - On L1: multiply the total gas used by the gas price in gwei: `totalGasUsed * gasPrice`
-- On an L2: multiply the total gas used by the L2 gas price in gwei and then add it to to the result of the relevant L2-L1 gas cost muliplied by the L1 gas cost in gwei: `totalGasUsed * l2GasPrice + callDataGasUsed * l1GasPrice`
+- On an L2: multiply the total gas used by the L2 gas price in gwei and then add it to the result of the relevant L2-L1 gas cost multiplied by the L1 gas cost in gwei: `totalGasUsed * l2GasPrice + callDataGasUsed * l1GasPrice`
 
 Note: if you are calculating the dollar amount of the gas cost, make sure to use the relevant gwei to usd conversions if the L2 has a different gas token to L1.
