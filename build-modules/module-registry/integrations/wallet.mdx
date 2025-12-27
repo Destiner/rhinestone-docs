@@ -5,13 +5,13 @@ sidebarTitle: "Wallet"
 
 If your smart wallet uses an ERC-7579 account with a native registry integration, such as Safe7579 or Biconomy Nexus, then all you need to do is to make sure that the registry is set up correctly. If your chosen account does not have a native registry integration, then you can add this to the accounts of your users by simply installing a module, the registry hook.
 
-### Create the users smart account
+### Create the user's smart account
 
 Using your preferred way, create a smart account for the user. Some smart accounts will allow you to provide initial modules to be installed on creation. However, if this is not the case, you can install the registry hook module after the smart account is created. In the following, we will show you how to install the registry hook module after account creation.
 
 ### Install the ModuleSDK
 
-To install a module on the users smart account, you will need to use the `installModule` function. This function will install the module on the smart account and execute the module's `onInstall` function. So, to be able to call this function, you will need to have the module's address, the module type id and the initData. This can be done most easily using the [ModuleSDK](/module-sdk).
+To install a module on the user's smart account, you will need to use the `installModule` function. This function will install the module on the smart account and execute the module's `onInstall` function. So, to be able to call this function, you will need to have the module's address, the module type id and the initData. This can be done most easily using the [ModuleSDK](/module-sdk).
 
 First, install the ModuleSDK:
 
